@@ -83,9 +83,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_tintless_bg_pca_algo \
     libmpbase \
     libnubia_effect \
-    libteeclientjni \
-    vendor.nubia.ifaa@1.0-impl \
-    vendor.nubia.ifaa@1.0 \
     camera.msm8998 \
     libAltek_AF \
     libHAFIAFalSDE1 \
