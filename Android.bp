@@ -8634,7 +8634,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libqfp-service",
                 "liblog",
-                "libhidltransport",
+                "libhidlbase",
                 "android.hardware.biometrics.fingerprint@2.1",
                 "vendor.qti.hardware.fingerprint@1.0",
                 "libc++",
