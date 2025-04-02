@@ -361,6 +361,7 @@ PRODUCT_PACKAGES += \
     libArcsoftAlgorithm \
     libDualCamera_Calibration \
     libqfp-service \
+    vendor.qti.hardware.fingerprint@1.0 \
     android.hardware.biometrics.fingerprint.fpc@2.1-service \
     mm-qcamera-daemon \
     qfp-daemon
