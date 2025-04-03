@@ -84,9 +84,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libNubiaImageAlgorithm.so",
             ],
             shared_libs: [
+                "libNubiaImageAlgorithmShim",
+                "libui_shim",
                 "liblog",
-                "libjnigraphics",
-                "libnativehelper",
                 "libcutils",
                 "libEGL",
                 "libGLESv2",
@@ -7712,6 +7712,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_pdaf.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libutils",
                 "libmmcamera_dbg",
@@ -7739,6 +7740,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_pdafcamif.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libutils",
                 "libmmcamera_dbg",
@@ -7794,6 +7796,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_ppeiscore.so",
             ],
             shared_libs: [
+                "libGLESv2_adreno",
                 "libcutils",
                 "liblog",
                 "libgui",
@@ -8465,6 +8468,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAltek_Alignment",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libAltek_Alignment.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libArcsoftAlgorithm",
     owner: "nubia",
     strip: {
@@ -8478,7 +8506,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmpbase",
                 "libarcsoft_dualcam_refocus",
-                "libjnigraphics",
                 "liblog",
                 "libalParseOTP",
                 "libc++",
