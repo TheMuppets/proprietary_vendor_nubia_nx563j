@@ -357,7 +357,7 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0 \
     gatekeeper.msm8998 \
     keystore.msm8998 \
-    nfc_nci.bcm2079x.msm8998 \
+    nfc_nci.msm8998 \
     libAltek_Alignment \
     libArcsoftAlgorithm \
     libDualCamera_Calibration \

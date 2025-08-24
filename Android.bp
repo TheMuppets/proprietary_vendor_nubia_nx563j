@@ -8437,7 +8437,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci.bcm2079x.msm8998",
+    name: "nfc_nci.msm8998",
     owner: "nubia",
     strip: {
         none: true,
@@ -8445,7 +8445,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/nfc_nci.bcm2079x.msm8998.so",
+                "proprietary/vendor/lib64/hw/nfc_nci.msm8998.so",
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
